@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:CollectionViewDemos.Views"
+             x:Class="CollectionViewDemos.Views.MainPage"
+             Title="CollectionView Demos">
+    <TableView Intent="Menu">
+        <TableRoot>
+              <TableSection Title="Grouping">
+                <TextCell Text="Grouping"
+                          Detail="Vertical list with DataTemplates"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type views:VerticalListGroupingPage}" />                
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>
